@@ -1,0 +1,7 @@
+version: '3'
+services:
+    ruby_debug:
+        build:
+            context: ./
+        tty: true
+        container_name: ruby_debug
