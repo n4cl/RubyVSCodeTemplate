@@ -15,20 +15,28 @@ VSCode で、Docker コンテナ上の Ruby プログラムをデバッグする
 
 ## Usage
 
-1. コンテナイメージのビルド
+1. コンテナイメージのビルド。
 
 ```
 Docker compose build
 ```
 
-2. コンテナの起動
+2. コンテナの起動。
 
 ```
 Docker compose up
 ```
 
-3. リモートコンテナへアクセス
-4. ワークスペースフォルダを設定
+3. VSCode からリモートコンテナへアタッチ。
+4. ワークスペースフォルダとして、```/usr/local/workspace``` を追加。
+
+![workspace](assets/workspace.png)
+
 5. VSCode の拡張に、Ruby をインストール。
-6. ```.vscode/launch.json``` を、リモートコンテナ側の実行ファイルとして設定。
-7. ブレークポイントを設定してデバッグを実行
+
+![extension](assets/extension.png)
+
+6. ```.vscode/launch.json``` を、リモートコンテナ側の構成ファイルとして設定。
+7. ブレークポイントを設定してデバッグを実行できることを確認。
+
+![debug](assets/debug.png)
